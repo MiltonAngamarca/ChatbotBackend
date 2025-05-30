@@ -10,7 +10,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-MODEL_NAME = os.getenv("MODEL_NAME", "ai/gemma3:4B-F16")
+MODEL_NAME = os.getenv("MODEL_NAME", "ai/qwen3:0.6B-F16")
 MODEL_RUNNER_URL = os.getenv(
     "MODEL_RUNNER_URL",
     "http://model-runner.docker.internal/engines/v1/chat/completions"
